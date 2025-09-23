@@ -13,4 +13,4 @@ def s_superiores(c):
             print(n)
 
 c = le_calificaciones()
-imprimir_promedios_superiores(c)
+s_superiores(c)
