@@ -1,16 +1,18 @@
 def le_calificaciones():
-    c = []
-    print("Por favor, ingrese 10 calificaciones:")
+    datos = []
+    print("Por favor, ingrese 10 nombres con sus calificaciones:")
     for i in range(10):
-        n = float(input(f"Calificación {i + 1}: "))
-        c.append(n)
-    return c
+        nombre = input(f"Nombre del estudiante {i + 1}: ")
+        calificacion = float(input(f"Calificación de {nombre}: "))
+        datos.append((nombre, calificacion))
+    return datos
 
-def s_superiores(c):
-    print("Calificaciones Superiores a 8.5")
-    for n in c:
-        if n > 8.5:
-            print(n)
+def s_superiores(datos):
+    print("\nCalificaciones superiores a 8.5:")
+    for nombre, calificacion in datos:
+        if calificacion > 8.5:
+            print(f"{nombre}: {calificacion}")
 
-c = le_calificaciones()
-s_superiores(c)
+
+datos = le_calificaciones()
+s_superiores(datos)
