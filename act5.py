@@ -13,5 +13,4 @@ for fahrenheit in temp_fahrenheit:
  temp_centigrados.append(round(centigrados, 2))
 
 
-print(temp_fahrenheit)
 print(temp_centigrados)
